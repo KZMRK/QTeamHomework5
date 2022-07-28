@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Форма 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form4.css">
+</head>
+<body>
+<div class="container">
+    <div class="form-header">
+        <img src="images/flower.png" alt="flower">
+        <p>Вас запрошували? Підтверджуйте</p>
+    </div>
+    <form action="#">
+        <div class="form-group">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="guests-num">Гостей:</label>
+            <select name="guests-num" id="guests-num" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="events">Я запрошений...</label>
+            <select name="events" id="events" required>
+                <option value="all-events">на всі заходи</option>
+                <option value="ceremony">на церемонію</option>
+                <option value="party">на вечірку</option>
+            </select>
+        </div>
+        <input type="submit" class="form-button" value="Я підтверджую" required>
+        <div class="form-bottom"></div>
+    </form>
+</div>
+</body>
+</html>

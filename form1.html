@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Форма 1</title>
+    <link rel="stylesheet" href="styles/form1.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="header-line"></div>
+        <div class="header-circle1"></div>
+        <div class="header-circle2"></div>
+    </div>
+    <form action="#">
+        <div class="form-group form-part1">
+            <label for="name">Ім'я</label>
+            <input type="text" id="name" required placeholder=" ">
+        </div>
+        <div class="form-group form-part1">
+            <label for="address">Адреса</label>
+            <textarea name="address" id="address"></textarea>
+        </div>
+        <div class="form-part2">
+            <div class="side-square"></div>
+            <div class="form-group">
+                <!--suppress HtmlFormInputWithoutLabel -->
+                <input type="tel" placeholder="мобільний номер" required>
+            </div>
+            <div class="side-square"></div>
+            <div class="form-group">
+                <input type="email" placeholder="ваша пошта" required>
+            </div>
+            <div class="side-square"></div>
+            <div class="form-group">
+                <button class="form-button">Відправити</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

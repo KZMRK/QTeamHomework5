@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    width: 300px;
+    background-color: #E4E3DF;
+    border: 2px solid #919191;
+    font-family: sans-serif;
+}
+.header {
+    position: relative;
+    margin-bottom: 40px;
+}
+.header-line {
+    width: 100%;
+    height: 25px;
+    background-image: repeating-linear-gradient(-45deg,
+    transparent,
+    transparent 5px,
+    #919191 4px,
+    #919191 7px
+    );
+    border-bottom: 2px solid #919191;
+}
+.header-circle1 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #9C8778;
+    margin: auto auto;
+}
+.header-circle2 {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FFFFFE;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+}
+form .form-part1 {
+    padding: 0 7px;
+}
+.form-group {
+    position: relative;
+}
+.form-group label {
+    display: block;
+}
+.form-group input,
+.form-group textarea,
+.form-part2 button{
+    outline: none;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+}
+.form-group input {
+    background-color: #E4E3DF;
+    padding: 5px 0;
+}
+.form-group textarea {
+    width: 100%;
+    height: 100px;
+    text-decoration: #5E91E1;
+    resize: none;
+    line-height:1.5em;
+    font-size: 18px;
+    background:
+            url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 6 6"><circle cx="3" cy="3" r="2" fill="%23BAB9B6" /></svg>')
+            0 0.5em/4px 1.5em
+            #E4E3DF;
+}
+
+.side-square {
+    width: 32px;
+    height: 32px;
+    background-color: #919191;
+    display: inline-block;
+}
+.form-part2 {
+    display: grid;
+    grid-template-columns: 32px  1fr;
+    padding: 0;
+}
+.form-part2 input,
+.form-part2 button{
+    border-top: 2px solid #909090;
+    height: 35px;
+    background-color: #E4E3DF;
+}
+.form-group input[type=text]:not(:placeholder-shown),
+.form-group input[type=email]:not(:placeholder-shown) {
+    background-color: #E8F0FE;
+}
+.form-group button {
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+}

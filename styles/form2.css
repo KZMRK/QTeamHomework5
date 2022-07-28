@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.container-border {
+    background: repeating-linear-gradient(
+            -45deg,
+            #C42061,
+            #C42061 10px,
+            #FFFDEE 10px,
+            #FFFDEE 20px,
+            #F5CAD9 20px,
+            #F5CAD9 30px,
+            #FFFDEE 30px,
+            #FFFDEE 40px
+    );
+    padding: 10px;
+}
+.container {
+    width: 300px;
+    background-color: #FFFDEE;
+    padding: 20px 15px;
+    position: relative;
+}
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+.form-group label {
+    display: block;
+    color: #6B6361;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+.form-group input {
+    border-bottom: 5px dotted;
+    border-image-source: url("../images/dots.svg");
+    border-image-slice: 40% 30%;
+    border-image-repeat: round;
+    background-color: #FFFDEE;
+}
+.form-group textarea {
+    display: block;
+    resize: none;
+    height: 150px;
+    line-height: 2em;
+    background:
+            url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 6 6"><circle cx="3" cy="3" r="2" fill="%23D0CEC2" /></svg>')
+            0 0.9em/4px 2em
+            #FFFDEE;
+}
+.form-group #name:not(:placeholder-shown) {
+    background-color: #E8F0FE;
+    border-bottom: none;
+}
+.form-button {
+    background-color: #C42061;
+    color: #FFFDEE;
+    border: none;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    height: 35px;
+    width: 90%;
+    cursor: pointer;
+}
+.form-button:hover {
+    opacity: 0.7;
+}

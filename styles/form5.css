@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E6F4FD;
+    margin: 0;
+}
+
+.container {
+    width: 350px;
+    background-color: white;
+    padding: 30px;
+    font-family: sans-serif;
+}
+.form-title {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    height: 160px;
+}
+.form-title p {
+    text-align: center;
+    color: #5E91E1;
+    font-weight: bold;
+    font-size: 35px;
+}
+.form-title .circle {
+    height: 140px;
+    width: 140px;
+    background-color: #FEE8E4;
+    border-radius: 50%;
+    position: absolute;
+    left: 60px;
+}
+.form-title .triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 120px solid #FFE3B5;
+    position: absolute;
+    right: 60px;
+    top: 0;
+}
+.form-group {
+    position: relative;
+    margin-bottom: 32px;
+}
+.form-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #9D959D;
+    font-size: 20px;
+    cursor: text;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+.form-group input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #5E91E1;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+.form-button {
+    width: 100%;
+    text-align: center;
+    background-color: #5E91E1;
+    border: none;
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form-group input:focus {
+    border-color: red;
+}
+.form-group input:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label {
+    top: -18px;
+    font-size: 14px;
+    cursor: default;
+    color: red;
+    margin: 0;
+}

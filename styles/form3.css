@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+.container {
+    max-width: 250px;
+    width: 100%;
+    background-color: #4d5256;
+    padding: 50px;
+    font-family: sans-serif;
+    background-image: url("../images/roses.png");
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+.blur {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.25);
+
+}
+.form-title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0 0 20px;
+    position: relative;
+}
+.form-title:before{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    bottom: -2px;
+    border-bottom: 2px solid #1762EE;
+}
+.form-group,
+.remember-me {
+    position: relative;
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    color: #bfc3da;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 14   px;
+}
+.form-group input[type=text],
+.form-group input[type=password] {
+    border-radius: 50px;
+    border: none;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    outline: none;
+    font-size: 14px;
+}
+.form-group input[type=text]:focus,
+.form-group input[type=password]:focus {
+    background-color: rgba(222, 222, 222, 0.44);
+    color: white;
+}
+.remember-me label {
+    color: #bfc3da;
+    font-size: 14px;
+    vertical-align: top;
+}
+.send-button {
+    width: 100%;
+    height: 40px;
+    background-color: #1762EE;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+}
